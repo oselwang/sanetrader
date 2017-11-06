@@ -7,5 +7,4 @@ composer.lock
 .Ds_Store 
 /node_modules 
 /bower_components
-artisan
 README.md
