@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
     return view('index');
 });
 
@@ -29,7 +28,4 @@ Route::get('contact', function(){
 // Login Page (app/views/login.blade.php)
 Route::get('login', function(){
     return view('login');
-=======
-    return view('welcome');
->>>>>>> 1bf484dde595b2f035ec48809ba986929b5f80ab
 });
