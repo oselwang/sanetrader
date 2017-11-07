@@ -165,7 +165,7 @@
 					<div class="item">
 						<div class="thumb-slider">
 							<a href="#" class="link-thumb-slider">
-								<img src="http://www.wallpapersin4k.org/wp-content/uploads/2017/04/Wallpaper-Stock-Market-19.jpg?" alt="" />
+								<img src="images/home/stock.jpg" alt="" />
 							</a>
 						</div>
 						<div class="info-slider">
@@ -246,7 +246,7 @@
 									<a target="_blank" class="post-url-one" href="#"><img id="post-img-one" src="" alt="" /></a>
 									<p class="comment-count"><span class="lnr lnr-bubble"></span> 12 Comments</p>
 								</div>
-								<div class="post-info">
+								<div class="post-info top-post-info">
 									<div class="post-format">
 										<a href="#"><span class="lnr lnr-camera-video"></span> Video</a>
 									</div>
@@ -262,7 +262,7 @@
 									<a target="_blank" class="post-url-two" href="#"><img id="post-img-two" src="" alt="" /></a>
 									<p class="comment-count"><span class="lnr lnr-bubble"></span> 12 Comments</p>
 								</div>
-								<div class="post-info">
+								<div class="post-info top-post-info">
 									<div class="post-format">
 										<a href="#"><span class="lnr lnr-camera"></span> Gallery</a>
 									</div>
@@ -275,15 +275,15 @@
 						<div class="item">
 							<div class="item-top-post post-item">
 								<div class="post-thumb">
-									<a href="#"><img src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2Fbf337a58-b8a7-11e7-bff8-f9946607a6ba?source=next&fit=scale-down&compression=best&width=360" alt="" /></a>
+									<a target="_blank" class="post-url-three" href="#"><img id="post-img-three" src="" alt="" /></a>
 									<p class="comment-count"><span class="lnr lnr-bubble"></span> 12 Comments</p>
 								</div>
-								<div class="post-info">
+								<div class="post-info top-post-info" >
 									<div class="post-format">
 										<a href="#"><span class="lnr lnr-file-empty"></span>  ARTICLE</a>
 									</div>
-									<h3 class="post-title"><a href="#">Two Sigma rapidly rises to top of quant hedge fund world</a></h3>
-									<p class="desc">Fund now on par with Renaissance with assets under management reaching more than $50bn. Fund now on par with Renaissance with assets.</p>
+									<h3 class="post-title"><a target="_blank" class="post-url-three" href="#"><span id="post-title-three"></span></a></h3>
+									<p class="desc" id="post-desc-three"></p>
 								</div>
 							</div>
 						</div>
@@ -291,15 +291,15 @@
 						<div class="item">
 							<div class="item-top-post post-item">
 								<div class="post-thumb">
-									<a href="#"><img src="images/home/post1.jpg" alt="" /></a>
+									<a target="_blank" class="post-url-four" href="#"><img id="post-img-four" src="" alt="" /></a>
 									<p class="comment-count"><span class="lnr lnr-bubble"></span> 12 Comments</p>
 								</div>
-								<div class="post-info">
+								<div class="post-info top-post-info">
 									<div class="post-format">
 										<a href="#"><span class="lnr lnr-camera-video"></span> Video</a>
 									</div>
-									<h3 class="post-title"><a href="#">Faucibus mollis inter appling codon paling</a></h3>
-									<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum, libero id imperdiet ementum, nunc other executives</p>
+									<h3 class="post-title"><a target="_blank" class="post-url-four" href="#"><span id="post-title-four"></span></a></h3>
+									<p class="desc" id="post-desc-four"></p>
 								</div>
 							</div>
 						</div>
@@ -307,15 +307,15 @@
 						<div class="item">	
 							<div class="item-top-post post-item">
 								<div class="post-thumb">
-									<a href="#"><img src="images/home/post2.jpg" alt="" /></a>
+									<a target="_blank" class="post-url-five" href="#"><img id="post-img-five" src="" alt="" /></a>
 									<p class="comment-count"><span class="lnr lnr-bubble"></span> 12 Comments</p>
 								</div>
-								<div class="post-info">
+								<div class="post-info top-post-info">
 									<div class="post-format">
 										<a href="#"><span class="lnr lnr-camera"></span> Gallery</a>
 									</div>
-									<h3 class="post-title"><a href="#">Aenean nonummy hendrerit mauris pari</a></h3>
-									<p class="desc">Fusce feugiat malesuada odio consectetur adipiscing elit. Phasellus rutrum, libero id imperdiet ementum, nunc other executives</p>
+									<h3 class="post-title"><a target="_blank" class="post-url-five" href="#"><span id="post-title-five"></span></a></h3>
+									<p class="desc" id="post-desc-five"></p>
 								</div>
 							</div>
 						</div>
@@ -323,21 +323,21 @@
 						<div class="item">
 							<div class="item-top-post post-item">
 								<div class="post-thumb">
-									<a href="#"><img src="images/home/post3.jpg" alt="" /></a>
+									<a target="_blank" class="post-url-six" href="#"><img id="post-img-six" src="" alt="" /></a>
 									<p class="comment-count"><span class="lnr lnr-bubble"></span> 12 Comments</p>
 								</div>
-								<div class="post-info">
+								<div class="post-info top-post-info">
 									<div class="post-format">
 										<a href="#"><span class="lnr lnr-file-empty"></span>  ARTICLE</a>
 									</div>
-									<h3 class="post-title"><a href="#">mollis inter appling codon paling Faucibus in hoeng</a></h3>
-									<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum, libero id imperdiet ementum, nunc other executives</p>
+									<h3 class="post-title"><a target="_blank" class="post-url-six" href="#"><span id="post-title-six"></span></a></h3>
+									<p class="desc" id="post-desc-six"></p>
 								</div>
 							</div>
 						</div>
 						<!-- End Item (Top Post) -->
 					</div>
-					<a href="#" class="btn-view-all"><span class="view-all-text" data-hover="view all">view all</span></a>
+					<!--<a href="#" class="btn-view-all"><span class="view-all-text" data-hover="view all">view all</span></a> -->
 				</div>
 			</div>
 			<!-- End Top Post Slider -->
@@ -350,14 +350,14 @@
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="item-trending-post post-item">
 										<div class="post-thumb">
-											<a href="#"><img src="images/home/trending1.jpg" alt="" /></a>
+											<a target="_blank" class="post-url-seven" href="#"><img id="post-img-seven" src="" alt="" /></a>
 										</div>
 										<div class="post-info">
 											<div class="post-format">
 												<a href="#"><span class="lnr lnr-camera-video"></span>  Video</a>
 											</div>
 											<h3 class="post-title">
-												<a href="#">Faucibus mollis inter appling codon paling</a>
+												<a target="_blank" class="post-url-seven" href="#"><span id="post-title-seven"></span></a>
 											</h3>
 										</div>
 									</div>
@@ -365,14 +365,14 @@
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="item-trending-post post-item">
 										<div class="post-thumb">
-											<a href="#"><img src="images/home/trending2.jpg" alt="" /></a>
+											<a target="_blank" class="post-url-eight" href="#"><img id="post-img-eight" src="" alt="" /></a>
 										</div>
 										<div class="post-info">
 											<div class="post-format">
 												<a href="#">American</a>
 											</div>
 											<h3 class="post-title">
-												<a href="#">mollis inter appling codon paling Faucibus in hoeng</a>
+												<a target="_blank" class="post-url-eight" href="#"><span id="post-title-eight"></span></a>
 											</h3>
 										</div>
 									</div>
@@ -380,14 +380,14 @@
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="item-trending-post post-item">
 										<div class="post-thumb">
-											<a href="#"><img src="images/home/trending3.jpg" alt="" /></a>
+											<a target="_blank" class="post-url-nine" href="#"><img id="post-img-nine" src="" alt="" /></a>
 										</div>
 										<div class="post-info">
 											<div class="post-format">
 												<a href="#"><span class="lnr lnr-camera-video"></span>  Video</a>
 											</div>
 											<h3 class="post-title">
-												<a href="#">appling codon paling Fauci</a>
+												<a target="_blank" class="post-url-nine" href="#"><span id="post-title-nine"></span></a>
 											</h3>
 										</div>
 									</div>
@@ -400,14 +400,14 @@
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="item-trending-post post-item">
 										<div class="post-thumb">
-											<a href="#"><img src="images/home/trending4.jpg" alt="" /></a>
+											<a target="_blank" class="post-url-ten" href="#"><img id="post-img-ten" src="" alt="" /></a>
 										</div>
 										<div class="post-info">
 											<div class="post-format">
 												<a href="#">American</a>
 											</div>
 											<h3 class="post-title">
-												<a href="#">Praesent justo dolor, lobortis quis, </a>
+												<a target="_blank" class="post-url-ten" href="#"><span id="post-title-ten"></span></a>
 											</h3>
 										</div>
 									</div>
@@ -415,14 +415,14 @@
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<div class="item-trending-post post-item">
 										<div class="post-thumb">
-											<a href="#"><img src="images/home/trending5.jpg" alt="" /></a>
+											<a target="_blank" class="post-url-eleven" href="#"><img id="post-img-eleven" src="" alt="" /></a>
 										</div>
 										<div class="post-info">
 											<div class="post-format">
 												<a href="#"><span class="lnr lnr-camera-video"></span>  Video</a>
 											</div>
 											<h3 class="post-title">
-												<a href="#">Praesent vestibulum moles</a>
+												<a target="_blank" class="post-url-eleven" href="#"><span id="post-title-eleven"></span></a>
 											</h3>
 										</div>
 									</div>
@@ -430,14 +430,14 @@
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="item-trending-post post-item">
 										<div class="post-thumb">
-											<a href="#"><img src="images/home/trending6.jpg" alt="" /></a>
+											<a target="_blank" class="post-url-twelve" href="#"><img id="post-img-twelve" src="" alt="" /></a>
 										</div>
 										<div class="post-info">
 											<div class="post-format">
 												<a href="#"><span class="lnr lnr-camera-video"></span>  Video</a>
 											</div>
 											<h3 class="post-title">
-												<a href="#">Praesent justo dolor, lobortis quis, lobortis dignissim</a>
+												<a target="_blank" class="post-url-twelve" href="#"><span id="post-title-twelve"></span></a>
 											</h3>
 										</div>
 									</div>
@@ -1720,6 +1720,54 @@
     $('#post-desc-two').text(json.articles[1].description);
  	$('#post-img-two').attr('src',json.articles[1].urlToImage);
  	$('.post-url-two').attr('href',json.articles[1].url);
+
+ 	$('#post-title-three').text(json.articles[2].title);
+    $('#post-desc-three').text(json.articles[2].description);
+ 	$('#post-img-three').attr('src',json.articles[2].urlToImage);
+ 	$('.post-url-three').attr('href',json.articles[2].url);
+  });
+
+  $.getJSON( "https://newsapi.org/v1/articles?source=cnbc&sortBy=top&apiKey=09b0e5f816064b60a730ecc6ed1e04fc", function( json ) {
+    $('#post-title-four').text(json.articles[0].title);
+    $('#post-desc-four').text(json.articles[0].description);
+ 	$('#post-img-four').attr('src',json.articles[0].urlToImage);
+ 	$('.post-url-four').attr('href',json.articles[0].url);
+
+ 	$('#post-title-five').text(json.articles[1].title);
+    $('#post-desc-five').text(json.articles[1].description);
+ 	$('#post-img-five').attr('src',json.articles[1].urlToImage);
+ 	$('.post-url-five').attr('href',json.articles[1].url);
+
+ 	$('#post-title-six').text(json.articles[2].title);
+    $('#post-desc-six').text(json.articles[2].description);
+ 	$('#post-img-six').attr('src',json.articles[2].urlToImage);
+ 	$('.post-url-six').attr('href',json.articles[2].url);
+  });
+
+  $.getJSON( "https://newsapi.org/v1/articles?source=fortune&sortBy=latest&apiKey=09b0e5f816064b60a730ecc6ed1e04fc", function( json ) {
+    $('#post-title-seven').text(json.articles[0].title);
+ 	$('#post-img-seven').attr('src',json.articles[0].urlToImage);
+ 	$('.post-url-seven').attr('href',json.articles[0].url);
+
+ 	$('#post-title-eight').text(json.articles[1].title);
+ 	$('#post-img-eight').attr('src',json.articles[1].urlToImage);
+ 	$('.post-url-eight').attr('href',json.articles[1].url);
+
+ 	$('#post-title-nine').text(json.articles[2].title);
+ 	$('#post-img-nine').attr('src',json.articles[2].urlToImage);
+ 	$('.post-url-nine').attr('href',json.articles[2].url);
+
+ 	$('#post-title-ten').text(json.articles[3].title);
+ 	$('#post-img-ten').attr('src',json.articles[3].urlToImage);
+ 	$('.post-url-ten').attr('href',json.articles[3].url);
+
+ 	$('#post-title-eleven').text(json.articles[4].title);
+ 	$('#post-img-eleven').attr('src',json.articles[4].urlToImage);
+ 	$('.post-url-eleven').attr('href',json.articles[4].url);
+
+ 	$('#post-title-twelve').text(json.articles[5].title);
+ 	$('#post-img-twelve').attr('src',json.articles[5].urlToImage);
+ 	$('.post-url-twelve').attr('href',json.articles[5].url);
   });
 
 })();
