@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+// About Page (app/views/about.blade.php)
+Route::get('about', function(){
+    return view('about');
+});
+
+// Contact Page (app/views/contact.blade.php)
+Route::get('contact', function(){
+    return view('contact');
+});
+
+// Login Page (app/views/login.blade.php)
+Route::get('login', function(){
+    return view('login');
 });
