@@ -83,3 +83,7 @@ button:hover {
 .container {
 	position: relative;
 }
+
+.top-post-info {
+	min-height: 250px;
+}
