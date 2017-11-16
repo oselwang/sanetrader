@@ -16,16 +16,21 @@ Route::get('/', function () {
 });
 
 // About Page (app/views/about.blade.php)
-Route::get('about', function(){
+Route::get('about', function () {
     return view('about');
 });
 
 // Contact Page (app/views/contact.blade.php)
-Route::get('contact', function(){
+Route::get('contact', function () {
     return view('contact');
 });
 
 // Login Page (app/views/login.blade.php)
-Route::get('login', function(){
+Route::get('login', function () {
     return view('login');
+});
+
+Route::group(['middleware' => 'guest', 'namespace' => 'Auth'], function () {
+    Route::post('login', 'AuthController@login');
+    Route::post('register', 'AuthController@register');
 });

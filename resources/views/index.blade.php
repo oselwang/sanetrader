@@ -158,8 +158,6 @@
 		</div>
 		<!-- End Header -->
 		<div id="content">
-			@include('login')
-			@include('register')
 			<div class="banner-slider home-paginav">
 				<div class="wrap-item">
 					<div class="item">
@@ -1708,6 +1706,8 @@
 <script type="text/javascript" src="js/slick.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+@include('login')
+@include('register')
 <script>
 (function() {
   $.getJSON( "https://newsapi.org/v1/articles?source=the-wall-street-journal&sortBy=top&apiKey=09b0e5f816064b60a730ecc6ed1e04fc", function( json ) {
