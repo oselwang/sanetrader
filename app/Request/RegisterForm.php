@@ -3,6 +3,7 @@
 namespace App\Request;
 
 use App\User;
+use Carbon\Carbon;
 
 class RegisterForm extends Form
 {
@@ -19,11 +20,13 @@ class RegisterForm extends Form
         $this->isValid();
 
         $user_registered = $user->create([
-            'name'     => $this->fields('name'),
-            'email'    => $this->fields('email'),
-            'password' => bcrypt($this->fields('password')),
+            'name'          => $this->fields('name'),
+            'email'         => $this->fields('email'),
+            'is_logged_in'  => true,
+            'last_activity' => Carbon::now()->toDateTimeString(),
+            'password'      => bcrypt($this->fields('password')),
         ]);
-
+        \Auth::login($user_registered);
         return $user_registered;
     }
 }

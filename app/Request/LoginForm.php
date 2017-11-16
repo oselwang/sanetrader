@@ -2,6 +2,7 @@
 
 namespace App\Request;
 
+use App\Exceptions\AuthException;
 use Auth;
 
 class LoginForm extends Form
@@ -20,9 +21,15 @@ class LoginForm extends Form
         ];
         $this->isValid();
         if (Auth::attempt($credentials)) {
+            if (Auth::user()->is_logged_in) {
+                Auth::logout();
+                throw new AuthException('You are logged in on another device. Please logout first');
+            }
+            Auth::user()->is_logged_in = true;
+            Auth::user()->save();
             return true;
         } else {
-            throw new \Exception('We cannot process these credential');
+            throw new AuthException('We cannot process these credential');
         }
     }
 }

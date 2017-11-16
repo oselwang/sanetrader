@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Request\LoginForm;
 use App\Request\RegisterForm;
+use App\User;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Auth;
@@ -43,9 +44,11 @@ class AuthController extends Controller
 
     public function logout()
     {
+        Auth::user()->is_logged_in = false;
+        Auth::user()->save();
         Auth::logout();
 
-        return response()->json(true);
+        return redirect('/');
     }
 
     public function register(RegisterForm $registerForm)

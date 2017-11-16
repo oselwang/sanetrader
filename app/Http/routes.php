@@ -30,7 +30,11 @@ Route::get('login', function () {
     return view('login');
 });
 
-Route::group(['middleware' => 'guest', 'namespace' => 'Auth'], function () {
-    Route::post('login', 'AuthController@login');
-    Route::post('register', 'AuthController@register');
+Route::group(['namespace' => 'Auth'], function () {
+    Route::get('logout', 'AuthController@logout');
+
+    Route::group(['middleware' => 'guest'], function () {
+        Route::post('login', 'AuthController@login');
+        Route::post('register', 'AuthController@register');
+    });
 });
