@@ -27,6 +27,15 @@
             "tests/TestCase.php"
         ]
     },
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org/"
+        }
+    ],
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
