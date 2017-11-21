@@ -3026,6 +3026,17 @@ blockquote {
     padding: 0 10px;
     width: 100%;
 }
+
+.contact-form-page input[type="password"] {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #666;
+    height: 40px;
+    max-width: 440px;
+    padding: 0 10px;
+    width: 100%;
+}
+
 .contact-form-page textarea {
     background: transparent none repeat scroll 0 0;
     border: 1px solid rgba(255, 255, 255, 0.2);

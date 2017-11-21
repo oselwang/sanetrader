@@ -38,3 +38,8 @@ Route::group(['namespace' => 'Auth'], function () {
         Route::post('register', 'AuthController@register');
     });
 });
+
+// Edit Profile Page (app/views/edit-user.blade.php)
+Route::get('edit-profile', function () {
+    return view('edit-user');
+});

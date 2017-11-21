@@ -34,7 +34,7 @@
                 data: $(this).serializeArray(),
                 Accept: 'application/json', // ini harus selalu ada setiap pemanggilan ajax
                 success: function (data) {
-                    window.location = 'http://sanetrader.dev/home'; //ini nanti diganti sesuai url setelah login
+                    window.location = 'http://sanetrader.dev'; //ini nanti diganti sesuai url setelah login
                 },
                 error: function (error) {
                     var errors = $.parseJSON(error.responseText);

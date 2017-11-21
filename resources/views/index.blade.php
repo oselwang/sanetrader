@@ -42,8 +42,12 @@
 								</form>
 							</div>
 							<div class="header-info-login">
-								<a href="#" class="header-btn-signin" data-popup-open="popup-1"><span class="lnr lnr-user"></span> Sign In</a>
-								<a href="#" class="header-btn-join" data-popup-open="popup-2"><span class="lnr lnr-lock"></span> Join</a>
+								@if (Auth::check())
+									<a href="/logout" class="header-btn-join"><span class="lnr lnr-lock"></span> Log Out</a>
+								@else
+									<a href="#" class="header-btn-signin" data-popup-open="popup-1"><span class="lnr lnr-user"></span> Sign In</a>
+									<a href="#" class="header-btn-join" data-popup-open="popup-2"><span class="lnr lnr-lock"></span> Join</a>
+								@endif
 							</div>
 						</div>
 					</div>
@@ -72,6 +76,10 @@
 							<li><a href="shop.html">shop v1</a></li>
 						</ul>
 					</li>
+					@if (Auth::check())
+					  	<li><a href="/chart">Chart</a></li>
+						<li><a href="/edit-profile">Edit Profile</a></li>
+					@endif
 					<li><a href="http://sanetradersblog.com/" target="_blank">Blog</a></li>
 					<li><a href="/about">About Us</a></li>
 					<li><a href="/contact">Contact Us</a></li>
