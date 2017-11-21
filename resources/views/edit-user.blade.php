@@ -168,21 +168,24 @@
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="contact-form-page">
 							<h2>Change your profile information here</h2>
-							<form>
+							<ul class="alert alert-danger hidden" id="error-message-edit">
+
+							</ul>
+							<form method="post" action="{{url('account/edit')}}" id="edit-account-form">
 								<span>Full Name</span>
-								<p><input type="text"  value="Full Name" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="text" name="name"  value="Full Name" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
 
 								<span>Email</span>
-								<p><input type="text"  value="Email" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="text" name="email" value="Email" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
 
 								<span>Current Password</span>
-								<p><input type="password"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="password"  name="current_password" value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
 
 								<span>New Password</span>
-								<p><input type="password"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="password" name="password"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
 
 								<span>Confirm Password</span>
-								<p><input type="password"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="password" name="password_confirmation"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
 								<p><input type="submit" value="Save" />
 							</form>
 						</div>
@@ -229,5 +232,28 @@
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+	$(document).ready(function () {
+		$('#edit-account-form').on('submit',function (e) {
+			e.preventDefault();
+			$.ajax({
+				type: 'post',
+				url: $(this).attr('action'),
+				data: $(this).serializeArray(),
+				Accept: 'application/json', // ini harus selalu ada setiap pemanggilan ajax
+				success: function (data) {
+					window.location = 'http://sanetrader.dev'; //ini nanti diganti sesuai dengan kebutuhan setelah update profile
+				},
+				error: function (error) {
+					var errors = $.parseJSON(error.responseText);
+					$('#error-message-edit').removeClass('hidden').empty();
+					$.each(errors, function (index, value) {
+						$('#error-message-edit').append('<li style="">' + value + '</li>');
+					});
+				}
+			});
+		});
+	});
+</script>
 </body>
 </html>

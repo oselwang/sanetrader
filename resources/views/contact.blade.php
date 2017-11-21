@@ -162,8 +162,6 @@
 		</div>
 		<!-- End Header -->
 		<div id="content">
-			@include('login')
-			@include('register')
 			<div class="contact-page">
 				<h2 class="title">Contact</h2>
 				<div class="row">
@@ -240,5 +238,7 @@
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+@include('login')
+@include('register')
 </body>
 </html>

@@ -39,6 +39,10 @@ Route::group(['namespace' => 'Auth'], function () {
     });
 });
 
+Route::group(['namespace' => 'Account', 'middleware' => 'auth'], function () {
+    Route::post('account/edit', 'AccountController@update');
+});
+
 // Edit Profile Page (app/views/edit-user.blade.php)
 Route::get('edit-profile', function () {
     return view('edit-user');

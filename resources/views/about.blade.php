@@ -162,8 +162,6 @@
 		</div>
 		<!-- End Header -->
 		<div id="content">
-			@include('login')
-			@include('register')
 			<div class="team-slider">
 				<h2 class="title">team</h2>
 				<div class="inner-team-slider">
@@ -373,6 +371,8 @@
 <script type="text/javascript" src="js/circles.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
+@include('login')
+@include('register')
 <script type="text/javascript">
 	$(window).load(function(){
 		Circles.create({
