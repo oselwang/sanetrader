@@ -183,11 +183,14 @@
 					<div class="col-md-8 col-sm-8 col-xs-12">
 						<div class="contact-form-page">
 							<h2>Get in touch with us!</h2>
-							<form>
-								<p><input type="text"  value="* Your Name (required)" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
-								<p><input type="text"  value="* Your Email (required)" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
-								<p><input type="text"  value="Title" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
-								<p><textarea onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue" cols="30" rows="8">* Your Message</textarea></p>
+							<ul class="alert alert-danger hidden" id="error-message-contact">
+
+							</ul>
+							<form method="post" action="{{url('contact')}}" id="contact-form">
+								<p><input type="text" name="name" value="* Your Name (required)" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="text" name="email" value="* Your Email (required)" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><input type="text" name="title" value="Title" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<p><textarea name="message" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue" cols="30" rows="8">* Your Message</textarea></p>
 								<p><input type="submit" value="Send Email" />
 							</form>
 						</div>
@@ -238,6 +241,30 @@
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script>
+	$(document).ready(function () {
+		$('#contact-form').on('submit',function (e) {
+			e.preventDefault();
+			var _ = $(this);
+			$.ajax({
+				type: 'post',
+				url: _.attr('action'),
+				data: _.serializeArray(),
+				Accept: 'application/json', // ini harus selalu ada setiap pemanggilan ajax
+				success: function (data) {
+//					window.location = 'http://sanetrader.dev'; //ini nanti diganti sesuai url setelah login
+				},
+				error: function (error) {
+					var errors = $.parseJSON(error.responseText);
+					$('#error-message-contact').removeClass('hidden').empty();
+					$.each(errors, function (index, value) {
+						$('#error-message-contact').append('<li style="">' + value + '</li>');
+					});
+				}
+			});
+		});
+	});
+</script>
 @include('login')
 @include('register')
 </body>

@@ -21,11 +21,16 @@ class LoginForm extends Form
         ];
         $this->isValid();
         if (Auth::attempt($credentials)) {
-            if (Auth::user()->is_logged_in) {
-                Auth::logout();
-                throw new AuthException('You are logged in on another device. Please logout first');
+            $new_session = \Session::getId();
+            try{
+                $previous_session = \Session::getHandler()->read(Auth::user()->session_id);
+                if ($previous_session) {
+                    \Session::getHandler()->destroy(Auth::user()->session_id);
+                }
+            }catch (\Exception $exception){
+
             }
-            Auth::user()->is_logged_in = true;
+            Auth::user()->session_id = $new_session;
             Auth::user()->save();
             return true;
         } else {
