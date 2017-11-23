@@ -30,17 +30,20 @@ Route::get('login', function () {
     return view('login');
 });
 
-Route::group(['namespace' => 'Auth'], function () {
-    Route::get('logout', 'AuthController@logout');
-
-    Route::group(['middleware' => 'guest'], function () {
-        Route::post('login', 'AuthController@login');
-        Route::post('register', 'AuthController@register');
-    });
+Route::post('contact', 'ContactController@create');
+Route::group(['middleware' => 'guest', 'namespace' => 'Auth'], function () {
+    Route::post('login', 'AuthController@login');
+    Route::post('register', 'AuthController@register');
 });
 
-Route::group(['namespace' => 'Account', 'middleware' => 'auth'], function () {
-    Route::post('account/edit', 'AccountController@update');
+Route::group(['middleware' => 'auth'], function () {
+    Route::group(['namespace' => 'Auth'], function () {
+        Route::get('logout', 'AuthController@logout');
+    });
+
+    Route::group(['namespace' => 'Account'],function (){
+        Route::post('account/edit', 'AccountController@update');
+    });
 });
 
 // Edit Profile Page (app/views/edit-user.blade.php)

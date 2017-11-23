@@ -44,7 +44,7 @@ class AuthController extends Controller
 
     public function logout()
     {
-        Auth::user()->is_logged_in = false;
+        Auth::user()->session_id = null;
         Auth::user()->save();
         Auth::logout();
 

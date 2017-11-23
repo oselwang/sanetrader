@@ -18,11 +18,10 @@ class RegisterForm extends Form
     {
         $user = New User;
         $this->isValid();
-
         $user_registered = $user->create([
             'name'          => $this->fields('name'),
             'email'         => $this->fields('email'),
-            'is_logged_in'  => true,
+            'session_id'    => \Session::getId(),
             'last_activity' => Carbon::now()->toDateTimeString(),
             'password'      => bcrypt($this->fields('password')),
         ]);
