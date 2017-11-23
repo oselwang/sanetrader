@@ -47,3 +47,8 @@ Route::group(['namespace' => 'Account', 'middleware' => 'auth'], function () {
 Route::get('edit-profile', function () {
     return view('edit-user');
 });
+
+//  Subscription Page (app/views/subscription.blade.php)
+Route::get('subscription', function () {
+    return view('subscription');
+});

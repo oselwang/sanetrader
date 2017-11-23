@@ -51,30 +51,11 @@
 			</div>
 			<nav class="main-nav">
 				<ul class="main-menu">
-					<li class="menu-item-has-children">
-						<a href="/">Home</a>
-						<ul class="sub-menu">
-							<li class="menu-item-has-children">
-								<a href="magazine.html">magazine</a>
-								<ul class="sub-menu">
-									<li><a href="index-1.html">Home v1</a></li>
-									<li><a href="index-2.html">Home v2</a></li>
-									<li><a href="index-3.html">Home v3</a></li>
-									<li><a href="index-4.html">Home v4</a></li>
-									<li><a href="index-5.html">Home v5</a></li>
-									<li><a href="index-6.html">Home v6</a></li>
-									<li><a href="index-7.html">Home v7</a></li>
-								</ul>
-							</li>
-							<li><a href="video.html">video v1</a></li>
-							<li><a href="event.html">Events v1</a></li>
-							<li><a href="blog.html">blog v1</a></li>
-							<li><a href="shop.html">shop v1</a></li>
-						</ul>
-					</li>
+					<li><a href="/">Home</a></li>
 					@if (Auth::check())
 					  	<li><a href="/chart">Chart</a></li>
 						<li><a href="/edit-profile">Edit Profile</a></li>
+						<li><a href="/subscription">Subscription</a></li>
 					@endif
 					<li><a href="http://sanetradersblog.com/" target="_blank">Blog</a></li>
 					<li><a href="/about">About Us</a></li>

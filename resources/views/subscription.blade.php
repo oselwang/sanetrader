@@ -10,7 +10,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>Edit Profile</title>
+	<title>Subscription</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
@@ -22,7 +22,12 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/theme.css" media="all"/>
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all"/>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style-subscription.css"> <!-- Resource style -->
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript"
+            src="https://app.sandbox.midtrans.com/snap/snap.js"
+            data-client-key="VT-client-lrPBB23W5hkf5EaR"></script> 
 </head>
 <body>
 <div class="wrap">
@@ -144,34 +149,84 @@
 		<!-- End Header -->
 		<div id="content">
 			<div class="contact-page">
-				<h2 class="title">Edit Profile</h2>
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="contact-form-page">
-							<h2>Change your profile information here</h2>
-							<ul class="alert alert-danger hidden" id="error-message-edit">
+			<h2 class="title" style="color: white;">Subscription Plan</h2>
+			<div class="contact-form-page">
+			<div class="cd-pricing-container cd-has-margins">
+				<div class="cd-pricing-switcher">
+					<p class="fieldset">
+						<input type="radio" name="duration-2" value="monthly" id="monthly-2" checked>
+						<label for="monthly-2">Monthly</label>
+						<input type="radio" name="duration-2" value="yearly" id="yearly-2">
+						<label for="yearly-2">Yearly</label>
+						<span class="cd-switch"></span>
+					</p>
+				</div> <!-- .cd-pricing-switcher -->
 
-							</ul>
-							<form method="post" action="{{url('account/edit')}}" id="edit-account-form">
-								<span>Full Name</span>
-								<p><input type="text" name="name"  value="Full Name" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+				<ul class="cd-pricing-list cd-bounce-invert">
+					<li>
+					</li>
+					<li class="cd-popular">
+						<ul class="cd-pricing-wrapper">
+							<li data-type="monthly" class="is-visible">
+								<header class="cd-pricing-header">
+									<h2>Popular</h2>
+									<div class="cd-price">
+										<span class="cd-currency">$</span>
+										<span class="cd-value">35</span>
+										<span class="cd-duration">mo</span>
+									</div>
+								</header> <!-- .cd-pricing-header -->
 
-								<span>Email</span>
-								<p><input type="text" name="email" value="Email" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<div class="cd-pricing-body">
+									<ul class="cd-pricing-features">
+										<li><em>512MB</em> Memory</li>
+										<li><em>3</em> Users</li>
+										<li><em>5</em> Websites</li>
+										<li><em>7</em> Domains</li>
+										<li><em>Unlimited</em> Bandwidth</li>
+										<li><em>24/7</em> Support</li>
+									</ul>
+								</div> <!-- .cd-pricing-body -->
 
-								<span>Current Password</span>
-								<p><input type="password"  name="current_password" value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+								<footer class="cd-pricing-footer">
+									<a id="cd-select-monthly" class="cd-select" href="#">Select</a>
+								</footer>  <!-- .cd-pricing-footer -->
+							</li>
 
-								<span>New Password</span>
-								<p><input type="password" name="password"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
+							<li data-type="yearly" class="is-hidden">
+								<header class="cd-pricing-header">
+									<h2>Popular</h2>
 
-								<span>Confirm Password</span>
-								<p><input type="password" name="password_confirmation"  value="" onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/></p>
-								<p><input type="submit" value="Save" />
-							</form>
-						</div>
-					</div>
-				</div>
+									<div class="cd-price">
+										<span class="cd-currency">$</span>
+										<span class="cd-value">350</span>
+										<span class="cd-duration">yr</span>
+									</div>
+								</header> <!-- .cd-pricing-header -->
+
+								<div class="cd-pricing-body">
+									<ul class="cd-pricing-features">
+										<li><em>512MB</em> Memory</li>
+										<li><em>3</em> Users</li>
+										<li><em>5</em> Websites</li>
+										<li><em>7</em> Domains</li>
+										<li><em>Unlimited</em> Bandwidth</li>
+										<li><em>24/7</em> Support</li>
+									</ul>
+								</div> <!-- .cd-pricing-body -->
+
+								<footer class="cd-pricing-footer">
+									<a id="cd-select-yearly" class="cd-select" href="#">Select</a>
+								</footer>  <!-- .cd-pricing-footer -->
+							</li>
+						</ul> <!-- .cd-pricing-wrapper -->
+					</li>
+
+					<li>
+					</li>
+				</ul> <!-- .cd-pricing-list -->
+			</div> <!-- .cd-pricing-container -->
+			</div>
 			</div>
 		</div>
 		<!-- End Content -->
@@ -190,7 +245,7 @@
 					</div>
 				</div>
 				<div class="footer">	
-					<ul class="menu-footer">
+					<ul class="menu-footer" style="font-size: 13px; line-height: inherit;">
 						<li><a href="#">About us </a></li>
 						<li><a href="#">Contact us</a></li>
 						<li><a href="#">Work for us</a></li>
@@ -201,7 +256,7 @@
 						<li><a href="#">Privacy Policy </a></li>
 						<li><a href="#">AdChoices</a></li>
 					</ul>
-					<p class="copyright">Copyright © 2016 Wordpress. All Rights Reserved. Designed by <a href="#"><span>7uptheme</span>.com</a>.</p>
+					<p class="copyright" style="font-size: 13px; margin-top: 5px; margin: 0 0 10px; line-height: 22px;">Copyright © 2016 Wordpress. All Rights Reserved. Designed by <a href="#"><span>7uptheme</span>.com</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -212,7 +267,9 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 <script>
 	$(document).ready(function () {
 		$('#edit-account-form').on('submit',function (e) {
@@ -234,6 +291,13 @@
 				}
 			});
 		});
+	});
+</script>
+<script type="text/javascript">
+	var payButton = document.getElementsByClassName('cd-select');
+	//var payButton = document.getElementById('pay-button');
+	payButton.addEventListener('click', function () {
+	//snap.pay('<?php //echo $snap_Token; ?>'); // (nanti tolong uncomment ya lik :D //store your snap token here
 	});
 </script>
 </body>
