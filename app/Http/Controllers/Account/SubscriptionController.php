@@ -12,6 +12,7 @@ class SubscriptionController extends Controller
 {
     const SNAP_SERVER_KEY = 'VT-server-DGkknDSZW5pYJGtu9jqlhXkx';
     const SNAP_SERVER_KEY_SANDBOX = 'VT-server-g90S0UJZ1E62lfgFcVponFha';
+    const ONE_DOLLAR_TO_RUPIAH = 13600;
 
     public function notification(HandleSnapNotificationForm $handleSnapNotificationForm)
     {
