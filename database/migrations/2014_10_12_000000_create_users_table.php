@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password', 60);
             $table->string('session_id')->nullable();
+            $table->timestamp('expired_premium_membership_date')->nullable();
             $table->timestamp('last_activity');
             $table->rememberToken();
             $table->timestamps();

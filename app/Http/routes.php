@@ -31,6 +31,7 @@ Route::get('login', function () {
 });
 
 Route::post('contact', 'ContactController@create');
+Route::post('snap/notification', 'Account\SubscriptionController@notification');
 Route::group(['middleware' => 'guest', 'namespace' => 'Auth'], function () {
     Route::post('login', 'AuthController@login');
     Route::post('register', 'AuthController@register');
@@ -41,8 +42,12 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('logout', 'AuthController@logout');
     });
 
-    Route::group(['namespace' => 'Account'],function (){
+    Route::group(['namespace' => 'Account'], function () {
         Route::post('account/edit', 'AccountController@update');
+
+        //Subscription
+        Route::get('snap/finish', 'SubscriptionController@finish');
+        Route::post('snap/token', 'SubscriptionController@getSnapToken');
     });
 });
 

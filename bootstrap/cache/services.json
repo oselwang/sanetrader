@@ -28,7 +28,8 @@
         "App\\Providers\\EventServiceProvider",
         "App\\Providers\\RouteServiceProvider",
         "Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider",
-        "Sentry\\SentryLaravel\\SentryLaravelServiceProvider"
+        "Sentry\\SentryLaravel\\SentryLaravelServiceProvider",
+        "Laracasts\\Flash\\FlashServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -46,7 +47,8 @@
         "App\\Providers\\AuthServiceProvider",
         "App\\Providers\\EventServiceProvider",
         "App\\Providers\\RouteServiceProvider",
-        "Sentry\\SentryLaravel\\SentryLaravelServiceProvider"
+        "Sentry\\SentryLaravel\\SentryLaravelServiceProvider",
+        "Laracasts\\Flash\\FlashServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",

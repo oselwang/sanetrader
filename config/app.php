@@ -149,7 +149,8 @@ return [
          * External Service Providers...
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        Sentry\SentryLaravel\SentryLaravelServiceProvider::class
+        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
 
     ],
 
